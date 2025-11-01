@@ -6,7 +6,7 @@ model = LayoutDetection(model_name="PP-DocLayout-S")
 
 # 2. 确认模型文件路径（通常位于以下目录）
 model_dir = "/home/runner/.paddlex/official_models/PP-DocLayout-S"
-print(f"模型目录文件: {os.listdir(model_dir)}")  # 检查是否有inference.pdmodel和inference.pdiparams
+
 
 # 3. 构造修正后的paddle2onnx命令
 cmd = [
