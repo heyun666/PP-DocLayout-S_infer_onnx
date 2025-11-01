@@ -2,8 +2,9 @@ name: PP-DocLayout-S_infer Layout Inference
 
 on:
   push:
+    branches: [ main-2 ]
   workflow_dispatch:
-
+  
 jobs:
   infer:
     runs-on: ubuntu-latest
