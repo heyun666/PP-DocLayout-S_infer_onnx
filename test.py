@@ -1,7 +1,7 @@
 from paddleocr import LayoutDetection
 
 model = LayoutDetection(model_name="PP-DocLayout-S")
-print(model.model_dir)
+print(model._model_dir)
 output = model.predict("000003.jpg", batch_size=1, layout_nms=True)
 for res in output:
     res.print()
