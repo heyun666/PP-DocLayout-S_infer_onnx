@@ -23,4 +23,4 @@ if result.returncode != 0:
     print(result.stderr)
     raise SystemExit("❌ paddle2onnx conversion failed")
 else:
-    print("✅ Model successfully converted to", output_file)
+    print("✅ Model successfully converted")
