@@ -1,5 +1,5 @@
 from paddleocr import LayoutDetection
-import subprocess
+import subprocess, os
 
 # 初始化模型，触发下载
 model = LayoutDetection(model_name="PP-DocLayout-S")
