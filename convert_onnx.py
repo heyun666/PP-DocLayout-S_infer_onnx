@@ -10,7 +10,7 @@ cmd = [
     "--model_dir", "/home/runner/.paddlex/official_models/PP-DocLayout-S",
     "--model_filename", "inference.json",
     "--params_filename", "inference.pdiparams",
-    "--save_file", "./output/model.onnx",
+    "--save_file", "model.onnx",
     "--enable_onnx_checker", "True"
 ]
 
