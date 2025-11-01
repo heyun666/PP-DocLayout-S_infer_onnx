@@ -7,7 +7,7 @@ model = LayoutDetection(model_name="PP-DocLayout-S")
 # 构造 paddle2onnx 命令
 cmd = [
     "paddle2onnx",
-    "--model_dir", "/root/.paddlex/official_models/PP-DocLayout-S",
+    "--model_dir", "/home/runner/.paddlex/official_models/PP-DocLayout-S",
     "--model_filename", "inference.json",
     "--params_filename", "inference.pdiparams",
     "--save_file", "./output/model.onnx",
