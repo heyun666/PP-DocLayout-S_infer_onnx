@@ -5,13 +5,12 @@ import subprocess, os
 model = LayoutDetection(model_name="PP-DocLayout-S")
 
 # 2. 确认模型文件路径（通常位于以下目录）
-model_dir = "/home/runner/.paddlex/official_models/PP-DocLayout-S"
 
 
 # 3. 构造修正后的paddle2onnx命令
 cmd = [
     "paddle2onnx",
-    "--model_dir", model_dir,
+    "--model_dir", "/home/runner/.paddlex/official_models/PP-DocLayout-S",
     "--model_filename", "inference.pdmodel",  # 修正：使用正确的模型结构文件
     "--params_filename", "inference.pdiparams",  # 参数文件正确
     "--save_file", "model.onnx",
