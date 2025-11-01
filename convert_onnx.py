@@ -5,8 +5,11 @@ import subprocess
 model = LayoutDetection(model_name="PP-DocLayout-S")
 
 # 获取模型真实路径
-model_dir = model._model_dir
-print("Model directory:", model_dir)
+#model_dir = model._model_dir
+#print("Model directory:", model_dir)
+# 2. 手动指定缓存路径
+model_dir = os.path.expanduser("~/.paddlex/official_models/PP-DocLayout-S")
+print(f"✅ Model directory confirmed: {model_dir}")
 
 # 导出为 ONNX
 onnx_path = "pp_doclayout_s.onnx"
