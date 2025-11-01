@@ -1,4 +1,4 @@
-name: Convert Paddle Model to ONNX
+name: Convert Paddle Model to ONNX 2
 
 on:
   push:
@@ -26,7 +26,7 @@ jobs:
     - name: List model files
       run: ls -l models
 
-    - name: Convert model to ONNX
+    - name: Convert model to ONNX 2
       run: python convert_onnx_db.py
 
     - name: Upload ONNX artifact
