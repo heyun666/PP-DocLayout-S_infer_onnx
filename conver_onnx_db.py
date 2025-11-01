@@ -3,7 +3,7 @@ import subprocess, os
 
 # 1. 初始化模型并触发下载（确保模型文件完整）
 model = LayoutDetection(model_name="PP-DocLayout-S")
-
+print(model._model_dir)
 # 2. 确认模型文件路径（通常位于以下目录）
 
 
