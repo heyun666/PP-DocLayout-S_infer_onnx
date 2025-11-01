@@ -14,7 +14,7 @@ cmd = [
     "--model_filename", "inference.pdmodel",  # 修正：使用正确的模型结构文件
     "--params_filename", "inference.pdiparams",  # 参数文件正确
     "--save_file", "model.onnx",
-    "--input_shape_dict", "{'image': [-1, 3, -1, -1], 'scale_factor': [-1, 1, 2]}",  # 动态输入尺寸
+    "--input_shape_dict", "image:-1,3,-1,-1;scale_factor:-1,1,2",  # 正确参数和格式,  # 动态输入尺寸
     "--opset_version", "11",  # 指定opset版本，确保兼容性
     "--enable_onnx_checker", "True"  # 保留检查
 ]
